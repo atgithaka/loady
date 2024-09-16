@@ -8,6 +8,12 @@ declare global {
     interface MainProps {
         children?: ReactNode;
     }
+
+    interface NameLinkProps {
+        name: string;
+        URL: string;
+        active?: boolean;
+    }
 }
 
 export {};
