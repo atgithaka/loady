@@ -37,7 +37,13 @@ export default function RootLayout({
                     href='/manifest.json'
                 />
             </head>
-            <body className={workSans.className}>{children}</body>
+            <body
+                className={[
+                    workSans.className,
+                    'h-dvh w-dvw flex flex-col items-start justify-start bg-gray-100',
+                ].join(' ')}>
+                {children}
+            </body>
         </html>
     );
 }
